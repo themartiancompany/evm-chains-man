@@ -42,9 +42,17 @@ _INSTALL_DIR=\
   install \
     -vdm755
 
-all:
+all: build-man
 
 install: install-doc install-man
+
+build-man:
+
+	mkdir \
+	  "build"
+	rst2man \
+	  "evm-chains.1.rst" \
+	  "evm-chains.1"
 
 install-doc:
 
