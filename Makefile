@@ -49,6 +49,7 @@ install: install-doc install-man
 build-man:
 
 	mkdir \
+	  -p \
 	  "build"
 	rst2man \
 	  "evm-chains.1.rst" \
