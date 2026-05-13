@@ -38,6 +38,34 @@ Description
 This manual page is a reference to the data consumed
 by applications using the LibEVM library.
 
+Applications can be retrieved from this package in the
+following way.
+
+..  code-block:: javascript
+
+  const
+    _ethereum_data_module =
+      require(
+        "ethereum-data";
+  _data_split_get =
+    _ethereum_data_module._data_split_get;
+  _data_unified_get =
+    _ethereum_data_module._data_unified_get;
+
+  const
+    _data =
+      _data_unified_get();
+  const
+    _chain_data =
+      _data_split_get(
+        <chain-id>);
+
+  console.log(
+    data);
+  console.log(
+    _chain_data);
+
+
 Bugs
 ====
 
