@@ -54,14 +54,14 @@ following way.
 
   const
     _data =
-      _data_unified_get();
+      _data_get();
   const
     _chain_data =
-      _data_split_get(
+      _data_get(
         <chain-id>);
 
   console.log(
-    data);
+    _data);
   console.log(
     _chain_data);
 
